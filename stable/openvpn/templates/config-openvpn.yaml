@@ -219,7 +219,7 @@ data:
 {{ if .Values.openvpn.dhcpOptionDomain }}
       OVPN_K8S_SEARCH
 {{ end }}
-      push "dhcp-option DNS OVPN_K8S_DNS"
+      #push "dhcp-option DNS OVPN_K8S_DNS"
 
       {{- if .Values.openvpn.serverConf }}
 {{ indent 6 .Values.openvpn.serverConf }}
